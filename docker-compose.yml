@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: php main.php
+    volumes:
+      - .:/app
